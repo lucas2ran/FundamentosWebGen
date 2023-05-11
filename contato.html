@@ -29,14 +29,14 @@
                     <label for="nome">Nome:</label> <br>
                     <input type="text" onkeyup="validaNome()" id="nome" class="input-padrao" required
                     placeholder="Nome">
-                    <div id="txtNomesobrenome"></div>
+                    <div id="txtNome"></div>
                     <br>
                     <br>
                 </div>
     
                 <div>
                     <label for="email">E-mail:</label> <br>
-                    <input type="email" id="email" class="input-padrao" required
+                    <input type="email" onkeyup="validaEmail()" id="email" class="input-padrao" required
                     placeholder="seuemail@dominio.com">
                     <div id="txtEmail"></div>
                     <br>
@@ -45,7 +45,7 @@
     
                 <div>
                     <label for="telefone">Telefone:</label> <br>
-                    <input type="telefone" id="telefone" class="input-padrao" required
+                    <input type="telefone" onkeyup="validaTelefone()" id="telefone" class="input-padrao" required
                     placeholder="(00) 00000-0000">
                     <div id="txtTelefone"></div>
                     <br>
@@ -54,7 +54,7 @@
     
                 <div>
                     <label for="mensagem">Deixe sua mensagem:</label> <br>
-                    <textarea cols="60" rows="5" id="mensagem" class="input-padrao"
+                    <textarea onkeyup="validaMensagem()" cols="60" rows="5" id="mensagem" class="input-padrao"
                     required placeholder="Sua mensagem"></textarea>
                     <div id="txtMensagem"></div>
                     <br>
@@ -84,6 +84,8 @@
             Todos os direitos reservados: Lucas Vinicius &copy;
         </p>
     </footer>
+
+    <script src="assets/script/script.js"></script>
     
 </body>
 </html>
