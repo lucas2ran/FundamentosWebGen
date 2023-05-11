@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" href="./assets/style/style.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="home.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    <h1 class="center">Formulário de contato</h1>
+
+    <div>
+        <div>
+            <form  class="margem">
+                <div>
+                    <label for="nome">Nome:</label> <br>
+                    <input type="text" onkeyup="validaNome()" id="nome" class="input-padrao" required
+                    placeholder="Nome">
+                    <div id="txtNomesobrenome"></div>
+                    <br>
+                    <br>
+                </div>
+    
+                <div>
+                    <label for="email">E-mail:</label> <br>
+                    <input type="email" id="email" class="input-padrao" required
+                    placeholder="seuemail@dominio.com">
+                    <div id="txtEmail"></div>
+                    <br>
+                    <br>
+                </div>
+    
+                <div>
+                    <label for="telefone">Telefone:</label> <br>
+                    <input type="telefone" id="telefone" class="input-padrao" required
+                    placeholder="(00) 00000-0000">
+                    <div id="txtTelefone"></div>
+                    <br>
+                    <br>
+                </div>
+    
+                <div>
+                    <label for="mensagem">Deixe sua mensagem:</label> <br>
+                    <textarea cols="60" rows="5" id="mensagem" class="input-padrao"
+                    required placeholder="Sua mensagem"></textarea>
+                    <div id="txtMensagem"></div>
+                    <br>
+                    <br>
+                </div>
+    
+                <div>
+                    <label class="checkbox">"Gostaria de saber mais sobre mim?"</label>
+                    <input type="checkbox">
+                    <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </div>
+            
+            <div class="center">
+                <h2>Minha localização:</h2>
+                <p>R. Castro Alves, 141 - Vila Aurea</p>
+                <p>Poá - SP</p>
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.365640729168!2d-46.35773902562604!3d-23.519347960048176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7b2fb2557ed3%3A0x1346fa8272984896!2sFonte%20%C3%81urea!5e0!3m2!1spt-BR!2sbr!4v1683740959062!5m2!1spt-BR!2sbr" 
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <script rel="stylesheet" href="./assets/script/script.js"></script>
+            </div>
+        </div>
+    <hr>
+    <footer class="tm-txt">
+        <p class="center">
+            Todos os direitos reservados: Lucas Vinicius &copy;
+        </p>
+    </footer>
+    
+</body>
+</html>
